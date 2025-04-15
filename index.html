@@ -8,8 +8,308 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          Be <span class="text-danger">|</span> Strong
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="pages/clases.html">Clases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/entrenadores.html"
+                >Entrenadores</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/planes.html">Planes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero position-relative d-flex align-items-center justify-content-center text-center">
+
+    <!-- Fondo de video YouTube -->
+    <div class="video-background">
+      <iframe
+        src="https://www.youtube.com/embed/W7NFoCfXAXU?autoplay=1&mute=1&loop=1&playlist=W7NFoCfXAXU&controls=0&showinfo=0&modestbranding=1"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      ></iframe>
+      <div class="video-overlay"></div>
+    </div>
+
+    <!-- Contenido del Hero -->
+    <div class="hero-content container text-white">
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="300">Hoy es el día...</h1>
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="700">Empezá el cambio</p>
+      <a href="#" class="btn btn-danger hero-button" data-aos="zoom-in" data-aos-delay="1100">¡Inscribite!</a>
+    </div>
+
+  </section>
+    
+    <!-- Contenido Principal -->
+    <main class="pt-5">
+      <!-- Secciones con data-aos para animaciones -->
+      <section class="section-container">
+        <h2 class="section-title">Nuestras Clases Destacadas</h2>
+        <div class="cards-container">
+          <!-- Card 1: CrossFit -->
+          <div class="card">
+            <div class="card-image">
+              <img src="assets/img/crossfit.jpg" alt="Clase de CrossFit" />
+            </div>
+            <div class="card-content">
+              <h3>CrossFit</h3>
+              <p>
+                Entrenamiento de alta intensidad que combina fuerza y
+                resistencia.
+              </p>
+              <a href="#" class="card-button">Más info</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Entrenamiento Personalizado -->
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="assets/img/personalizado.jpg"
+                alt="Entrenamiento Personalizado"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Entrenamiento Personalizado</h3>
+              <p>
+                Plan diseñado exclusivamente para tus objetivos y necesidades.
+              </p>
+              <a href="#" class="card-button">Más info</a>
+            </div>
+          </div>
+
+          <!-- Card 3: Rehabilitación -->
+          <div class="card">
+            <div class="card-image">
+              <img src="assets/img/rehabilitacion.jpg" alt="Rehabilitación" />
+            </div>
+            <div class="card-content">
+              <h3>Rehabilitación</h3>
+              <p>
+                Recuperación física guiada por profesionales especializados.
+              </p>
+              <a href="#" class="card-button">Más info</a>
+            </div>
+          </div>
+
+          <!-- Card 4: Yoga -->
+          <div class="card">
+            <div class="card-image">
+              <img src="assets/img/yoga.jpg" alt="Clase de Yoga" />
+            </div>
+            <div class="card-content">
+              <h3>Yoga Fitness</h3>
+              <p>
+                Mejora tu flexibilidad y reduce el estrés con nuestras sesiones.
+              </p>
+              <a href="#" class="card-button">Más info</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contador Circular -->
+    <section class="stats-section">
+      <div class="stats-container">
+        <!-- Stat 1 -->
+        <div class="stat-item">
+          <div class="stat-circle" data-target="500">
+            <span class="stat-number">0</span>
+          </div>
+          <p class="stat-label">Clientes felices</p>
+        </div>
+        
+        <!-- Stat 2 -->
+        <div class="stat-item">
+          <div class="stat-circle" data-target="100">
+            <span class="stat-number">0</span>
+          </div>
+          <p class="stat-label">Clases semanales</p>
+        </div>
+        
+        <!-- Stat 3 -->
+        <div class="stat-item">
+          <div class="stat-circle" data-target="20">
+            <span class="stat-number">0</span>
+          </div>
+          <p class="stat-label">Entrenadores</p>
+        </div>
+        
+        <!-- Stat 4 -->
+        <div class="stat-item">
+          <div class="stat-circle" data-target="10">
+            <span class="stat-number">0</span>
+          </div>
+          <p class="stat-label">Años de experiencia</p>
+        </div>
+      </div>
+    </section>
+
+      <!-- testimonios -->
+
+      <section class="testimonials">
+        <h2 class="testimonials-title">Lo que dicen nuestros socios</h2>
+        <div class="testimonials-carousel">
+        <!-- Testimonio 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "El mejor gimnasio al que he ido. Los entrenadores son
+              increíbles."
+            </p>
+            <p class="testimonial-author">- Carlos M.</p>
+          </div>
+        </div>
+        <!-- Testimonio 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "He logrado mis metas gracias a sus programas personalizados."
+            </p>
+            <p class="testimonial-author">- Ana L.</p>
+          </div>
+        </div>
+        <!-- Testimonio 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "Ambiente motivador y clases variadas. ¡Lo recomiendo 100%!"
+            </p>
+            <p class="testimonial-author">- Javier R.</p>
+          </div>
+        </div>
+
+        <!-- Testimonio 4 -->
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "Me ayudaron a perder peso y tonificar mi cuerpo. ¡Increíble!"
+            </p>
+            <p class="testimonial-author">- Claudia L.</p>
+          </div>
+        </div>
+
+        <!-- Testimonio 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "Soy una persona mayor y me siento muy bien entrenando aquí.
+              ¡Gracias!"
+            </p>
+            <p class="testimonial-author">- Roberto S.</p>
+          </div>
+        </div>
+
+        <!-- Testimonio 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "me guiaron en todo el proceso de rehabilitacion"
+            </p>
+            <p class="testimonial-author">- Maria C.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Bootstrap -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <!-- Columnas del footer -->
+          <div class="footer-brand">
+            <a href="../index.html" class="footer-logo"
+              >Be <span>|</span> Strong</a
+            >
+            <p class="footer-slogan">Transformando cuerpos, cambiando vidas</p>
+          </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889527!2d-58.383759!3d-34.603734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM2JzEzLjQiUyA1OMKwMjMnMDEuNSJX!5e0!3m2!1sen!2sar!4v1620000000000!5m2!1sen!2sar"
+            width="100%"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            aria-label="Mapa de ubicación del gimnasio"
+          >
+          </iframe>
+        </div>
+
+        <!-- Redes sociales minimalistas -->
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <!-- Copyright y legal -->
+        <div class="footer-legal">
+          <p>&copy; 2023 Be | Strong. Todos los derechos reservados.</p>
+          <div class="legal-links">
+            <a href="#">Privacidad</a>
+            <span>•</span>
+            <a href="#">Términos</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap y AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
