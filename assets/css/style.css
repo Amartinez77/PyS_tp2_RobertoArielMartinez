@@ -91,3 +91,94 @@ body {
     font-size: 1.5rem;
   }
 }
+
+/* cards */
+
+.card-button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #e63946;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #c1121f;
+}
+
+/* slider de testimonios */
+
+#testimonialCarousel {
+  max-width: 700px;
+  margin: auto;
+}
+
+.carousel-inner {
+  background: #f8f9fa;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.blockquote-footer {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* footer  */
+
+.footer-logo {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer-logo span {
+  color: #e94560;
+}
+
+.footer-slogan {
+  color: #aaaaaa;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.footer-social a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #e94560;
+}
+
+.footer-legal p {
+  color: #aaaaaa;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.legal-links a {
+  color: #aaaaaa;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.legal-links a:hover {
+  color: #ffffff;
+}
+
+.legal-links span {
+  color: #555555;
+}
