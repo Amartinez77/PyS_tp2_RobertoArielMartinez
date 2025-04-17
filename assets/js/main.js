@@ -95,4 +95,22 @@ $(document).ready(function () {
       }
     );
   });
+
+  // toggle planes.html
+
+  // Cambiar precio mensual/anual
+$('#billingSwitch').on('change', function () {
+  $('.price').each(function () {
+    const isAnnual = $('#billingSwitch').is(':checked');
+    const newPrice = isAnnual ? $(this).data('annually') : $(this).data('monthly');
+    $(this).text(newPrice);
+  });
+});
+
+// Activar tooltips de Bootstrap
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+tooltipTriggerList.forEach(t => new bootstrap.Tooltip(t));
+
+
+
 });

@@ -384,3 +384,11 @@ body {
 .rating label:hover ~ label {
   color: gold;
 }
+
+/* planes.html */
+
+/* Opcional para resaltar el switch */
+.form-switch .form-check-input {
+  width: 3rem;
+  height: 1.5rem;
+}
