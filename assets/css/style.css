@@ -12,6 +12,38 @@
   --light: #f8f9fa;
 }
 
+/* botones */
+
+.btn_primary {
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn_primary:hover {
+  background-color: #d62839;
+}
+
+.btn_primary--large {
+  width: 180px;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn_primary--large:hover {
+  background-color: #d62839;
+}
+
 /* Base Mobile */
 body {
   padding-top: 56px; /* Para navbar fija */
@@ -482,4 +514,26 @@ body {
   .blog-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* contacto.html */
+
+.card i {
+  color: var(--primary);
+}
+
+.contact-info{
+  background-color: #1a1a2e;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info h5 {
+  color: var(--primary);
+  margin-right: 0.5rem;
+}
+
+.contact-info p {
+  color: #fff;
+  margin: 0;
 }

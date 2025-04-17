@@ -49,27 +49,25 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(statsSection);
   }
 
-  // slider testimonios index
+  // Slider testimonios index
   $(document).ready(function () {
     const $carousel = $("#testimonialCarousel");
 
     $carousel.carousel({
-      interval: 3000, // 3 segundos
+      interval: 3000,
       pause: "hover",
       wrap: true,
     });
   });
 });
 
-// filtro clases.html
+// jQuery DOM ready
 $(document).ready(function () {
+  // Filtro clases.html
   $(".filter-btn").click(function () {
-    // Quitar clase activa de todos los botones
     $(".filter-btn").removeClass("active");
-    // Agregar clase activa al botón actual
     $(this).addClass("active");
 
-    // Obtener el valor del filtro
     const filterValue = $(this).attr("data-filter");
 
     if (filterValue === "*") {
@@ -80,8 +78,7 @@ $(document).ready(function () {
     }
   });
 
-  // rating entrenadores.html
-
+  // Rating entrenadores.html
   $(".progress-bar").each(function () {
     let $bar = $(this);
     let width = $bar.data("width");
@@ -96,38 +93,66 @@ $(document).ready(function () {
     );
   });
 
-  // toggle planes.html
-
-  // Cambiar precio mensual/anual
-$('#billingSwitch').on('change', function () {
-  $('.price').each(function () {
-    const isAnnual = $('#billingSwitch').is(':checked');
-    const newPrice = isAnnual ? $(this).data('annually') : $(this).data('monthly');
-    $(this).text(newPrice);
+  // Toggle planes.html
+  $('#billingSwitch').on('change', function () {
+    $('.price').each(function () {
+      const isAnnual = $('#billingSwitch').is(':checked');
+      const newPrice = isAnnual ? $(this).data('annually') : $(this).data('monthly');
+      $(this).text(newPrice);
+    });
   });
-});
 
-// Activar tooltips de Bootstrap
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-tooltipTriggerList.forEach(t => new bootstrap.Tooltip(t));
+  // Tooltips
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  tooltipTriggerList.forEach(t => new bootstrap.Tooltip(t));
 
-  // filtro blog.html
+  // Filtro blog.html
+  $('.filter-btn').click(function () {
+    const category = $(this).data('filter');
+    $('.filter-btn').removeClass('active');
+    $(this).addClass('active');
 
-  // Filtro por tags
-$('.filter-btn').click(function () {
-  const category = $(this).data('filter');
-  $('.filter-btn').removeClass('active');
-  $(this).addClass('active');
+    if (category === 'all') {
+      $('.blog-post').removeClass('d-none');
+    } else {
+      $('.blog-post').addClass('d-none');
+      $(`.blog-post[data-category="${category}"]`).removeClass('d-none');
+    }
+  });
 
-  if (category === 'all') {
-    $('.blog-post').removeClass('d-none');
-  } else {
-    $('.blog-post').addClass('d-none');
-    $(`.blog-post[data-category="${category}"]`).removeClass('d-none');
+  // Contacto avanzado solo en contacto.html
+  if ($('#contactForm').length > 0) {
+    $('#contactForm input, #contactForm textarea').on('input', function () {
+      if (this.checkValidity()) {
+        $(this).removeClass('is-invalid').addClass('is-valid');
+      } else {
+        $(this).removeClass('is-valid').addClass('is-invalid');
+      }
+    });
+
+    $('#contactForm').on('submit', function (e) {
+      e.preventDefault();
+
+      let isValid = true;
+      $('#contactForm input[required], #contactForm textarea[required]').each(function () {
+        if (!this.checkValidity()) {
+          $(this).addClass('is-invalid');
+          isValid = false;
+        }
+      });
+
+      if (isValid) {
+        $('#spinner').fadeIn();
+
+        setTimeout(function () {
+          $('#spinner').fadeOut();
+          $('#confirmModal').modal('show');
+          $('#contactForm')[0].reset();
+          $('#contactForm input, #contactForm textarea').removeClass('is-valid is-invalid');
+        }, 2000);
+      }
+    });
   }
 
   AOS.refresh();
-});
-
-
 });
