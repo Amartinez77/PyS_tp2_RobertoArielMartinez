@@ -1,120 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <link rel="stylesheet" href="/assets/css/style.css" />
-  </head>
-  <body>
-    <!-- Navbar Bootstrap -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="../index.html">
-          Be <span class="text-danger">|</span> Strong
-        </a>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./clases.html">Clases</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./entrenadores.html">Entrenadores</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./planes.html">Planes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
-            </li>
-          </ul>
+<body>
+  <!-- Navbar Bootstrap -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="../index.html">
+        Be <span class="text-danger">|</span> Strong
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./clases.html">Clases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./entrenadores.html">Entrenadores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./planes.html">Planes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- seccion central -->
+  <main class="container">
+    <!-- Sección de Entrenadores -->
+    <section class="trainers-section">
+      <h2 class="section-title">Conoce al equipo</h2>
+      <p class="section-subtitle">
+        Pasa el cursor sobre cada tarjeta para ver más detalles
+      </p>
+
+      <div class="row justify-content-center">
+        <!-- Entrenador 1 -->
+        <div class="container my-5">
+          <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front p-4 text-center bg-light">
+                    <img src="../assets/img/trainer1.webp" alt="Entrenador" class="img-fluid rounded-circle mb-2"
+                      width="100" />
+                    <h5>Carlos Mendez</h5>
+                    <p>Especialista en CrossFit</p>
+                    <!---->
+                    <div class="rating">
+                      <input type="radio" name="star" id="star5" value="5" /><label for="star5">★</label>
+                      <input type="radio" name="star" id="star4" value="4" /><label for="star4">★</label>
+                      <input type="radio" name="star" id="star3" value="3" /><label for="star3">★</label>
+                      <input type="radio" name="star" id="star2" value="2" /><label for="star2">★</label>
+                      <input type="radio" name="star" id="star1" value="1" /><label for="star1">★</label>
+                    </div>
+                  </div>
+                  <div class="flip-card-back p-4 text-white text-center">
+                    <h5>Carlos Mendez</h5>
+                    <p>CrossFit nivel 3</p>
+                    <div class="text-start">
+                      <small>Fuerza</small>
+                      <div class="progress mb-2">
+                        <div class="progress-bar bg-warning" data-width="90%" style="width: 0%">
+                          0%
+                        </div>
+                      </div>
+
+                      <small>Resistencia</small>
+                      <div class="progress mb-2">
+                        <div class="progress-bar bg-success" data-width="85%" style="width: 0%">
+                          0%
+                        </div>
+                      </div>
+
+                      <small>Técnica</small>
+                      <div class="progress">
+                        <div class="progress-bar bg-info" data-width="95%" style="width: 0%">
+                          0%
+                        </div>
+                      </div>
+                    </div>
+
+                    <p class="mt-3">
+                      Más de 10 años de experiencia. Clases personalizadas y
+                      grupales.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Entrenador 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front p-4 text-center bg-light">
+                    <img src="../assets/img/trainer2.jpg" alt="Entrenador" class="img-fluid rounded-circle mb-2"
+                      width="100" />
+                    <h5>Ana López</h5>
+                    <p>Especialista en Yoga</p>
+                    <!---->
+                    <div class="rating">
+                      <input type="radio" name="star" id="star5" value="5" /><label for="star5">★</label>
+                      <input type="radio" name="star" id="star4" value="4" /><label for="star4">★</label>
+                      <input type="radio" name="star" id="star3" value="3" /><label for="star3">★</label>
+                      <input type="radio" name="star" id="star2" value="2" /><label for="star2">★</label>
+                      <input type="radio" name="star" id="star1" value="1" /><label for="star1">★</label>
+                    </div>
+                  </div>
+                  <div class="flip-card-back p-4 text-white text-center">
+                    <h5>Ana López</h5>
+                    <p>Yoga terapéutico</p>
+                    <div class="text-start">
+                      <small>Flexibilidad</small>
+                      <div class="progress mb-2">
+                        <div class="progress-bar bg-warning" data-width="90%" style="width: 0%">
+                          0%
+                        </div>
+                      </div>
+
+                      <small>Meditación</small>
+                      <div class="progress mb-2">
+                        <div class="progress-bar bg-success" data-width="85%" style="width: 0%">
+                          0%
+                        </div>
+                      </div>
+
+                      <small>Relajación</small>
+                      <div class="progress">
+                        <div class="progress-bar bg-info" data-width="95%" style="width: 0%">
+                          0%
+                        </div>
+                      </div>
+                    </div>
+
+                    <p class="mt-3">
+                      Instructora de yoga con formación en India y especialización en yoga terapéutico.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Entrenador 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front p-4 text-center bg-light">
+                    <img src="../assets/img/trainer3.webp" alt="Entrenador" class="img-fluid rounded-circle mb-2"
+                      width="100" />
+                    <h5>Javier Rodríguez</h5>
+                    <p>Especialista en Musculación</p>
+                    <!---->
+                    <div class="rating">
+                      <input type="radio" name="star" id="star5" value="5" /><label for="star5">★</label>
+                      <input type="radio" name="star" id="star4" value="4" /><label for="star4">★</label>
+                      <input type="radio" name="star" id="star3" value="3" /><label for="star3">★</label>
+                      <input type="radio" name="star" id="star2" value="2" /><label for="star2">★</label>
+                      <input type="radio" name="star" id="star1" value="1" /><label for="star1">★</label>
+                    </div>
+                  </div>
+                  <div class="flip-card-back p-4 text-white text-center">
+                    <h5>Javier Rodríguez</h5>
+                    <p>Culturismo profesional</p>
+                    <div class="text-start">
+                      <small>Fuerza</small>
+                      <div class="progress mb-2">
+                        <div class="progress-bar bg-warning" data-width="90%" style="width: 0%">
+                          0%
+                        </div>
+                      </div>
+
+                      <small>Hipertrófia</small>
+                      <div class="progress mb-2">
+                        <div class="progress-bar bg-success" data-width="85%" style="width: 0%">
+                          0%
+                        </div>
+                      </div>
+
+                      <small>Nutrición</small>
+                      <div class="progress">
+                        <div class="progress-bar bg-info" data-width="95%" style="width: 0%">
+                          0%
+                        </div>
+                      </div>
+                    </div>
+
+                    <p class="mt-3">
+                      Campeón nacional de culturismo con enfoque en desarrollo muscular natural.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </section>
+  </main>
+
+  <!-- Footer Bootstrap -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="text-center">
+        <div class="footer-brand">
+          <a href="../index.html" class="footer-logo">Be <span>|</span> Strong</a>
+          <p class="footer-slogan">Transformando cuerpos, cambiando vidas</p>
         </div>
       </div>
-    </nav>
 
-    <!-- Footer Bootstrap -->
-    <footer class="bg-dark text-white py-4">
-      <div class="container">
-        <div class="text-center">
-          <div class="footer-brand">
-            <a href="../index.html" class="footer-logo"
-              >Be <span>|</span> Strong</a
-            >
-            <p class="footer-slogan">Transformando cuerpos, cambiando vidas</p>
-          </div>
-        </div>
+      <!-- Mapa -->
+      <div class="footer-map row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889527!2d-58.383759!3d-34.603734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM2JzEzLjQiUyA1OMKwMjMnMDEuNSJX!5e0!3m2!1sen!2sar!4v1620000000000!5m2!1sen!2sar"
+          width="100%" height="200" style="border: 0" allowfullscreen="" loading="lazy"
+          aria-label="Mapa de ubicación del gimnasio">
+        </iframe>
+      </div>
 
-        <!-- Mapa -->
-        <div class="footer-map row">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889527!2d-58.383759!3d-34.603734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM2JzEzLjQiUyA1OMKwMjMnMDEuNSJX!5e0!3m2!1sen!2sar!4v1620000000000!5m2!1sen!2sar"
-            width="100%"
-            height="200"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            aria-label="Mapa de ubicación del gimnasio"
-          >
-          </iframe>
-        </div>
+      <!-- Redes sociales minimalistas -->
+      <div class="footer-social text-center mt-3">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
 
-        <!-- Redes sociales minimalistas -->
-        <div class="footer-social text-center mt-3">
-          <a href="#" aria-label="Facebook"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a href="#" aria-label="Instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        </div>
-
-        <!-- Copyright y legal -->
+      <!-- Copyright y legal -->
+      <div class="blockquote-footer text-center">
+        <p>&copy; 2023 Be | Strong. Todos los derechos reservados.</p>
         <div class="blockquote-footer text-center">
-          <p>&copy; 2023 Be | Strong. Todos los derechos reservados.</p>
-          <div class="blockquote-footer text-center">
-            <a href="#">Privacidad</a>
-            <span>•</span>
-            <a href="#">Términos</a>
-          </div>
+          <a href="#">Privacidad</a>
+          <span>•</span>
+          <a href="#">Términos</a>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Scripts de Bootstrap y AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.umd.js"></script>
+  <!-- Scripts de Bootstrap y AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.umd.js"></script>
 
-    <script src="../assets/js/main.js"></script>
-  </body>
+  <script src="../assets/js/main.js"></script>
+</body>
+
 </html>

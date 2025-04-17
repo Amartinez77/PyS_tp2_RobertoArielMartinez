@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// filtro clases.html
 $(document).ready(function () {
   $(".filter-btn").click(function () {
     // Quitar clase activa de todos los botones
@@ -77,5 +78,21 @@ $(document).ready(function () {
       $(".grid-item").hide();
       $(filterValue).show();
     }
+  });
+
+  // rating entrenadores.html
+
+  $(".progress-bar").each(function () {
+    let $bar = $(this);
+    let width = $bar.data("width");
+    $bar.animate(
+      { width: width },
+      {
+        duration: 1000,
+        step: function (now) {
+          $bar.text(Math.floor(now) + "%");
+        },
+      }
+    );
   });
 });
