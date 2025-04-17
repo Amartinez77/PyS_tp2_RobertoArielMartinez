@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Variables CSS */
 :root {
   --primary: #e63946;
@@ -181,4 +187,151 @@ body {
 
 .legal-links span {
   color: #555555;
+}
+
+/* clases.html  */
+
+.masonry-grid {
+  display: block;
+  column-count: 1;
+  column-gap: 1rem;
+}
+
+.grid-item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  display: inline-block;
+  width: 100%;
+}
+
+.clase-card {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.8);
+
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.clase-card:hover .card-overlay {
+  transform: translateY(0);
+}
+
+.class-card:hover img {
+  transform: scale(1.05);
+}
+
+.overlay-text {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.overlay-text-p {
+  color: white;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-weight: normal;
+}
+
+.overlay-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #e63946;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.overlay-btn:hover {
+  background: #c1121f;
+}
+
+/* Pantallas medianas: 2 columnas */
+@media (min-width: 768px) {
+  .masonry-grid {
+    column-count: 2;
+    .overlay-text {
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      z-index: 3;
+    }
+
+    .card-overlay {
+      padding: 1.5rem;
+    }
+
+    .overlay-text {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      z-index: 3;
+    }
+
+    .overlay-text-p {
+      color: white;
+      font-size: 0.9rem;
+
+      font-weight: normal;
+    }
+
+    .overlay-btn {
+      margin-top: 0.5rem;
+
+      background: #e63946;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+  }
+}
+
+/* Pantallas grandes: 3 columnas */
+@media (min-width: 1200px) {
+  .masonry-grid {
+    column-count: 3;
+  }
+}
+
+/* horarios */
+
+.schedule-section {
+  background-color: #f8f9fa;
+}
+
+.schedule-table th,
+.schedule-table td {
+  vertical-align: middle;
+  font-weight: 500;
+}
+
+.schedule-table tbody td {
+  background-color: #fff;
+}
+
+.schedule-table tbody td:not(:empty) {
+  background-color: #e2f0d9;
+  color: #333;
+}
+
+.schedule-table tbody td:empty,
+.schedule-table tbody td:contains("-") {
+  background-color: #f1f1f1;
+  color: #999;
+  font-style: italic;
 }

@@ -60,3 +60,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+$(document).ready(function () {
+  $(".filter-btn").click(function () {
+    // Quitar clase activa de todos los botones
+    $(".filter-btn").removeClass("active");
+    // Agregar clase activa al botón actual
+    $(this).addClass("active");
+
+    // Obtener el valor del filtro
+    const filterValue = $(this).attr("data-filter");
+
+    if (filterValue === "*") {
+      $(".grid-item").show();
+    } else {
+      $(".grid-item").hide();
+      $(filterValue).show();
+    }
+  });
+});

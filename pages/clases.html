@@ -58,7 +58,226 @@
         </div>
       </div>
     </nav>
+    <main class="container">
+      <!-- filtro por categoria -->
 
+      <section>
+        <article class="text-center mb-4 mt-3">
+          <button
+            class="btn btn-outline-primary filter-btn active"
+            data-filter="*"
+          >
+            Todas
+          </button>
+          <button
+            class="btn btn-outline-primary filter-btn"
+            data-filter=".card-musculacion"
+          >
+            Musculación
+          </button>
+          <button
+            class="btn btn-outline-primary filter-btn"
+            data-filter=".card-crossfit"
+          >
+            CrossFit
+          </button>
+          <button
+            class="btn btn-outline-primary filter-btn"
+            data-filter=".card-yoga"
+          >
+            Yoga
+          </button>
+          <button
+            class="btn btn-outline-primary filter-btn"
+            data-filter=".card-spinning"
+          >
+            Spinning
+          </button>
+        </article>
+
+        <article class="masonry-grid">
+          <div class="mb-4 grid-item card-crossfit">
+            <div class="card clase-card h100 position-relative overflow-hidden">
+              <img
+                src="../assets/img/crossfit-class.webp"
+                class="card-img-top"
+                alt="Clase de CrossFit"
+              />
+              <div
+                class="card-overlay d-flex flex-column justify-content-center align-items-start px-4"
+              >
+                <h3 class="overlay-text mt-3">CrossFit</h3>
+                <p class="overlay-text-p">
+                  Entrenamiento funcional de alta intensidad
+                </p>
+                <button class="overlay-btn">Ver detalles</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-4 grid-item card-musculacion">
+            <div class="card clase-card h100 position-relative overflow-hidden">
+              <img
+                src="../assets/img/musculacion-class.webp"
+                alt="Clase de Musculación"
+              />
+              <div
+                class="card-overlay d-flex flex-column justify-content-center align-items-start px-4"
+              >
+                <h3 class="overlay-text mt-3">Musculación</h3>
+                <p class="overlay-text-p">Desarrolla fuerza y masa muscular</p>
+                <button class="overlay-btn">Ver detalles</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-4 grid-item card-yoga">
+            <div class="card clase-card h100 position-relative overflow-hidden">
+              <img src="../assets/img/yoga-class.jpg" alt="Clase de Yoga" />
+              <div
+                class="card-overlay d-flex flex-column justify-content-center align-items-start px-4"
+              >
+                <h3 class="overlay-text">Yoga</h3>
+                <p class="overlay-text-p">
+                  Mejora flexibilidad y reduce estrés
+                </p>
+                <button class="overlay-btn">Ver detalles</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-4 grid-item card-spinning">
+            <div class="card clase-card h100 position-relative overflow-hidden">
+              <img
+                src="../assets/img/spinning-class.webp"
+                alt="Clase de Spinning"
+              />
+              <div
+                class="card-overlay d-flex flex-column justify-content-center align-items-start px-4"
+              >
+                <h3 class="overlay-text">Spinning</h3>
+                <p class="overlay-text-p">
+                  Cardio intenso en bicicletas estáticas
+                </p>
+                <button class="overlay-btn">Ver detalles</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-4 grid-item card-crossfit">
+            <div class="card clase-card h100 position-relative overflow-hidden">
+              <img
+                src="../assets/img/crossfit2-class.webp"
+                alt="Clase de CrossFit Avanzado"
+              />
+              <div
+                class="card-overlay d-flex flex-column justify-content-center align-items-start px-4"
+              >
+                <h3 class="overlay-text">CrossFit Avanzado</h3>
+                <p class="overlay-text-p">Para atletas con experiencia</p>
+                <button class="overlay-btn">Ver detalles</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-4 grid-item card-musculacion">
+            <div class="card clase-card h100 position-relative overflow-hidden">
+              <img
+                src="../assets/img/musculacion2-class.jpeg"
+                alt="Clase de Musculación Funcional"
+              />
+              <div
+                class="card-overlay d-flex flex-column justify-content-center align-items-start px-4"
+              >
+                <h3 class="overlay-text">Musculación Funcional</h3>
+                <p class="overlay-text-p">Enfocado en movimientos compuestos</p>
+                <button class="overlay-btn">Ver detalles</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- horarios -->
+
+      <section class="schedule-section py-5">
+        <h2 class="section-title text-center mb-4">Horarios Semanales</h2>
+
+        <div class="table-responsive">
+          <table
+            class="table table-bordered text-center align-middle schedule-table"
+          >
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">Hora</th>
+                <th scope="col">Lunes</th>
+                <th scope="col">Martes</th>
+                <th scope="col">Miércoles</th>
+                <th scope="col">Jueves</th>
+                <th scope="col">Viernes</th>
+                <th scope="col">Sábado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">07:00</th>
+                <td>CrossFit</td>
+                <td>Musculación</td>
+                <td>CrossFit</td>
+                <td>Musculación</td>
+                <td>CrossFit</td>
+                <td>Yoga</td>
+              </tr>
+              <tr>
+                <th scope="row">09:00</th>
+                <td>Spinning</td>
+                <td>Yoga</td>
+                <td>Spinning</td>
+                <td>Yoga</td>
+                <td>Spinning</td>
+                <td>CrossFit</td>
+              </tr>
+              <tr>
+                <th scope="row">12:00</th>
+                <td>Musculación</td>
+                <td>CrossFit</td>
+                <td>Musculación</td>
+                <td>CrossFit</td>
+                <td>Musculación</td>
+                <td>Spinning</td>
+              </tr>
+              <tr>
+                <th scope="row">16:00</th>
+                <td>Yoga</td>
+                <td>Spinning</td>
+                <td>Yoga</td>
+                <td>Spinning</td>
+                <td>Yoga</td>
+                <td>Musculación</td>
+              </tr>
+              <tr>
+                <th scope="row">18:00</th>
+                <td>CrossFit</td>
+                <td>Musculación</td>
+                <td>CrossFit</td>
+                <td>Musculación</td>
+                <td>CrossFit</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <th scope="row">20:00</th>
+                <td>Spinning</td>
+                <td>Yoga</td>
+                <td>Spinning</td>
+                <td>Yoga</td>
+                <td>Spinning</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
     <!-- Footer Bootstrap -->
     <footer class="bg-dark text-white py-4">
       <div class="container">
@@ -114,6 +333,9 @@
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.umd.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
     <script src="../assets/js/main.js"></script>
   </body>
