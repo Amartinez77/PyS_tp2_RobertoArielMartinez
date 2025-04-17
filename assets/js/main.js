@@ -111,6 +111,23 @@ $('#billingSwitch').on('change', function () {
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 tooltipTriggerList.forEach(t => new bootstrap.Tooltip(t));
 
+  // filtro blog.html
+
+  // Filtro por tags
+$('.filter-btn').click(function () {
+  const category = $(this).data('filter');
+  $('.filter-btn').removeClass('active');
+  $(this).addClass('active');
+
+  if (category === 'all') {
+    $('.blog-post').removeClass('d-none');
+  } else {
+    $('.blog-post').addClass('d-none');
+    $(`.blog-post[data-category="${category}"]`).removeClass('d-none');
+  }
+
+  AOS.refresh();
+});
 
 
 });
