@@ -1,120 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <link rel="stylesheet" href="/assets/css/style.css" />
-  </head>
-  <body>
-    <!-- Navbar Bootstrap -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="../index.html">
-          Be <span class="text-danger">|</span> Strong
-        </a>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./clases.html">Clases</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./entrenadores.html">Entrenadores</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./planes.html">Planes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
-            </li>
-          </ul>
+<body>
+  <!-- Navbar Bootstrap -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="../index.html">
+        Be <span class="text-danger">|</span> Strong
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./clases.html">Clases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./entrenadores.html">Entrenadores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./planes.html">Planes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- main -->
+
+  <main>
+
+    <section class="blog-section py-5">
+      <div class="blog-container">
+        <h2 class="section-title text-center mb-4">Blog Fitness</h2>
+
+        <!-- Filtros por tags -->
+        <div class="text-center mb-4">
+          <button class="btn btn-outline-primary filter-btn" data-filter="all">Todos</button>
+          <button class="btn btn-outline-primary filter-btn" data-filter="nutricion">Nutrición</button>
+          <button class="btn btn-outline-primary filter-btn" data-filter="entrenamiento">Entrenamiento</button>
+          <button class="btn btn-outline-primary filter-btn" data-filter="bienestar">Bienestar</button>
+        </div>
+
+        <!-- Artículos -->
+        <div class="row blog-grid g-4">
+
+          <div class="col blog-post blog-card" data-category="nutricion" data-aos="fade-up">
+            <div class="card">
+              <img src="/assets/img/blog1.webp" class="object-fit-cover img-article" alt="Nutrición">
+              <div class="card-body">
+                <span class="article-date">12 de enero de 2023</span>
+                <h5 class="card-title">Rutina de Fuerza para Principiantes</h5>
+                <p class="text-secondary">Aprende los fundamentos para construir músculo de manera efectiva y segura en
+                  tus primeros meses de entrenamiento.</p>
+                <div class="d-flex flex-wrap">
+                  <span class="tag">rutinas</span><span class="tag">entrenamiento</span>
+                </div>
+                <a href="#" class="read-more">Leer más...</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col blog-post blog-card" data-category="nutricion" data-aos="fade-up">
+            <div class="card h-100">
+              <img src="/assets/img/blog2.jpg" class="object-fit-cover img-article" alt="Nutrición">
+              <div class="card-body">
+                <span class="article-date">12 de enero de 2023</span>
+                <h5 class="card-title">Rutina de Fuerza para Principiantes</h5>
+                <p class="text-secondary">Aprende los fundamentos para construir músculo de manera efectiva y segura en
+                  tus primeros meses de entrenamiento.</p>
+                <div class="d-flex flex-wrap">
+                  <span class="tag">rutinas</span><span class="tag">entrenamiento</span>
+                </div>
+                <a href="#" class="read-more">Leer más...</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col blog-post blog-card" data-category="nutricion" data-aos="fade-up">
+            <div class="card h-100">
+              <img src="/assets/img/blog3.webp" class="object-fit-cover img-article" alt="Nutrición">
+              <div class="card-body">
+                <span class="article-date">12 de enero de 2023</span>
+                <h5 class="card-title">Rutina de Fuerza para Principiantes</h5>
+                <p class="text-secondary">Aprende los fundamentos para construir músculo de manera efectiva y segura en
+                  tus primeros meses de entrenamiento.</p>
+                <div class="d-flex flex-wrap">
+                  <span class="tag">rutinas</span><span class="tag">entrenamiento</span>
+                </div>
+                <a href="#" class="read-more">Leer más...</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col blog-post blog-card" data-category="nutricion" data-aos="fade-up">
+            <div class="card h-100">
+              <img src="/assets/img/blog4.avif" class="object-fit-cover img-article" alt="Nutrición">
+              <div class="card-body">
+                <span class="article-date">12 de enero de 2023</span>
+                <h5 class="card-title">Rutina de Fuerza para Principiantes</h5>
+                <p class="text-secondary">Aprende los fundamentos para construir músculo de manera efectiva y segura en
+                  tus primeros meses de entrenamiento.</p>
+                <div class="d-flex flex-wrap">
+                  <span class="tag">rutinas</span><span class="tag">entrenamiento</span>
+                </div>
+                <a href="#" class="read-more">Leer más...</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col blog-post blog-card" data-category="nutricion" data-aos="fade-up">
+            <div class="card h-100">
+              <img src="/assets/img/blog5.jpg" class="object-fit-cover img-article" alt="Nutrición">
+              <div class="card-body">
+                <span class="article-date">12 de enero de 2023</span>
+                <h5 class="card-title">Rutina de Fuerza para Principiantes</h5>
+                <p class="text-secondary">Aprende los fundamentos para construir músculo de manera efectiva y segura en
+                  tus primeros meses de entrenamiento.</p>
+                <div class="d-flex flex-wrap">
+                  <span class="tag">rutinas</span><span class="tag">entrenamiento</span>
+                </div>
+                <a href="#" class="read-more">Leer más...</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col blog-post blog-card" data-category="nutricion" data-aos="fade-up">
+            <div class="card h-100">
+              <img src="/assets/img/blog6.webp" class="object-fit-cover img-article" alt="Nutrición">
+              <div class="card-body">
+                <span class="article-date">12 de enero de 2023</span>
+                <h5 class="card-title">Rutina de Fuerza para Principiantes</h5>
+                <p class="text-secondary">Aprende los fundamentos para construir músculo de manera efectiva y segura en
+                  tus primeros meses de entrenamiento.</p>
+                <div class="d-flex flex-wrap">
+                  <span class="tag">rutinas</span><span class="tag">entrenamiento</span>
+                </div>
+                <a href="#" class="read-more">Leer más...</a>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
-    </nav>
+    </section>
 
-    <!-- Footer Bootstrap -->
-    <footer class="bg-dark text-white py-4">
-      <div class="container">
-        <div class="text-center">
-          <div class="footer-brand">
-            <a href="../index.html" class="footer-logo"
-              >Be <span>|</span> Strong</a
-            >
-            <p class="footer-slogan">Transformando cuerpos, cambiando vidas</p>
-          </div>
+  </main>
+  <!-- Footer Bootstrap -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="text-center">
+        <div class="footer-brand">
+          <a href="../index.html" class="footer-logo">Be <span>|</span> Strong</a>
+          <p class="footer-slogan">Transformando cuerpos, cambiando vidas</p>
         </div>
+      </div>
 
-        <!-- Mapa -->
-        <div class="footer-map row">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889527!2d-58.383759!3d-34.603734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM2JzEzLjQiUyA1OMKwMjMnMDEuNSJX!5e0!3m2!1sen!2sar!4v1620000000000!5m2!1sen!2sar"
-            width="100%"
-            height="200"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            aria-label="Mapa de ubicación del gimnasio"
-          >
-          </iframe>
-        </div>
+      <!-- Mapa -->
+      <div class="footer-map row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889527!2d-58.383759!3d-34.603734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM2JzEzLjQiUyA1OMKwMjMnMDEuNSJX!5e0!3m2!1sen!2sar!4v1620000000000!5m2!1sen!2sar"
+          width="100%" height="200" style="border: 0" allowfullscreen="" loading="lazy"
+          aria-label="Mapa de ubicación del gimnasio">
+        </iframe>
+      </div>
 
-        <!-- Redes sociales minimalistas -->
-        <div class="footer-social text-center mt-3">
-          <a href="#" aria-label="Facebook"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a href="#" aria-label="Instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        </div>
+      <!-- Redes sociales minimalistas -->
+      <div class="footer-social text-center mt-3">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
 
-        <!-- Copyright y legal -->
+      <!-- Copyright y legal -->
+      <div class="blockquote-footer text-center">
+        <p>&copy; 2023 Be | Strong. Todos los derechos reservados.</p>
         <div class="blockquote-footer text-center">
-          <p>&copy; 2023 Be | Strong. Todos los derechos reservados.</p>
-          <div class="blockquote-footer text-center">
-            <a href="#">Privacidad</a>
-            <span>•</span>
-            <a href="#">Términos</a>
-          </div>
+          <a href="#">Privacidad</a>
+          <span>•</span>
+          <a href="#">Términos</a>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Scripts de Bootstrap y AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.umd.js"></script>
+  <!-- Scripts de Bootstrap y AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.7/dist/countUp.umd.js"></script>
 
-    <script src="../assets/js/main.js"></script>
-  </body>
+  <script src="../assets/js/main.js"></script>
+</body>
+
 </html>
