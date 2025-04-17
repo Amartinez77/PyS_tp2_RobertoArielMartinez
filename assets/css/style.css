@@ -44,6 +44,21 @@
   background-color: #d62839;
 }
 
+.btn_light{
+  background-color: var(--light);
+  color: var(--dark_light);
+  text-decoration: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn_light:hover {
+  background-color: #d62839;
+}
+
 /* Base Mobile */
 body {
   padding-top: 56px; /* Para navbar fija */
@@ -169,7 +184,7 @@ body {
 
 .blockquote-footer {
   font-size: 1rem;
-  color: #6c757d;
+  color: var(--primary);
 }
 
 /* footer  */
