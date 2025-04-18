@@ -493,7 +493,7 @@ body {
 /* entrenadores.html */
 
 .hero-entrenadores {
-  background-image: url("/assets/img/trainer-hero.jpg");
+  background-image: url("../img/trainer-hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -564,7 +564,7 @@ body {
 /* planes.html */
 
 .hero-planes {
-  background-image: url("/assets/img/planes-hero.jpg");
+  background-image: url("../img/planes-hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -612,7 +612,7 @@ body {
 /* blog.html */
 
 .hero-blog {
-  background-image: url("/assets/img/blog-hero.png");
+  background-image: url("../img/blog-hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -727,7 +727,7 @@ body {
 /* contacto.html */
 
 .hero-contacto {
-  background-image: url("/assets/img/contact-hero.jpg");
+  background-image: url("../img/contact-hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
