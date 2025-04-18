@@ -10,8 +10,27 @@
 
 ## 📁 Estructura del Proyecto
 
-´´´bash
-BeStrong/ ├── index.html ├── pages/ │ ├── clases.html │ ├── entrenadores.html │ ├── planes.html │ ├── blog.html │ └── contacto.html ├── assets/ │ ├── css/ │ │ └── style.css │ ├── js/ │ │ └── main.js │ ├── img/ │ │ ├── crossfit.jpg │ │ ├── personalizado.jpg │ │ ├── rehabilitacion.jpg │ │ ├── yoga.jpg │ │ └── ... │ └── bootstrap/ │ ├── css/ │ │ └── bootstrap.min.css │ └── js/ │ └── bootstrap.bundle.min.js
+´´´ bash
+BeStrong/ 
+  ├── index.html 
+  ├── pages/ │ 
+    ├── clases.html │ 
+    ├── entrenadores.html │ 
+    ├── planes.html │ 
+    ├── blog.html │ 
+    └── contacto.html 
+  ├── assets/ │ 
+    ├── css/ │ 
+      │ └── style.css │ 
+    ├── js/ │ 
+      │ └── main.js │ 
+    ├── img/ │ 
+      │ ├── imagenes del sitio │ 
+    └── bootstrap/ │ 
+      ├── css/ │ 
+        │ └── bootstrap.min.css │ 
+      └── js/ 
+        │ └── bootstrap.bundle.min.js
 ´´´
 
 
