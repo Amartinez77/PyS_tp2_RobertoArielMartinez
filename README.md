@@ -1,16 +1,20 @@
 # 🏋️‍♂️ Be | Strong - Sitio Web para Gimnasio
 
 **Be | Strong** es un sitio web moderno y responsive desarrollado para un gimnasio, con el objetivo de ofrecer a los usuarios una experiencia visual atractiva y funcional para conocer las clases, entrenadores, planes, blog y formas de contacto.
+[![Preview del Sitio](https://i.postimg.cc/VkYSv8j4/Captura-de-pantalla-2025-04-18-001529.png)](https://amartinez77.github.io/PyS_tp2_RobertoArielMartinez/)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
 ## 🌐 Demo
 
-🔗 [Ver sitio en vivo](#) *(Agregá el link si lo publicás en GitHub Pages o Netlify)*
+🔗 [Ver sitio en vivo](https://amartinez77.github.io/PyS_tp2_RobertoArielMartinez/) 
 
 ---
 
 ## 📁 Estructura del Proyecto
 
-´´´ bash
+```bash
 BeStrong/ 
   ├── index.html 
   ├── pages/ │ 
@@ -31,7 +35,7 @@ BeStrong/
         │ └── bootstrap.min.css │ 
       └── js/ 
         │ └── bootstrap.bundle.min.js
-´´´
+```
 
 
 ---
@@ -62,18 +66,21 @@ BeStrong/
 
 ## 📸 Capturas
 
-*(Podés agregar capturas de pantalla si querés)*
+[![Captura-de-pantalla-2025-04-18-002230.png](https://i.postimg.cc/4dCsK6DZ/Captura-de-pantalla-2025-04-18-002230.png)](https://postimg.cc/zLk96gDP)
 
 ---
 
 ## 🧑‍💻 Autor
 
 Desarrollado por **Roberto Ariel Jesús Martinez**  
-📧 Contacto: *(podés agregar un mail o LinkedIn si querés)*
+📧 Contacto: ariel.mtz85@gmail.com
 
 ---
 
 ## 📄 Licencia
 
 Este proyecto está bajo la licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+
+
 
