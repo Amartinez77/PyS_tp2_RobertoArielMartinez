@@ -54,6 +54,15 @@
 
   <main>
 
+    <!-- hero -->
+
+    <section class="hero-section hero-blog d-flex align-items-center justify-content-center text-white text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Blog de Fitness</h1>
+        <p class="lead">Consejos, rutinas y nutrición para tu mejor versión</p>
+      </div>
+    </section>
+
     <section class="blog-section py-5">
       <div class="blog-container">
         <h2 class="section-title text-center mb-4">Blog Fitness</h2>
@@ -170,6 +179,48 @@
 
         </div>
       </div>
+    </section>
+
+    <section class=" container comments-section py-5">
+      <div class="box-comments">
+        <h4 class="mb-3">Comentarios</h4>
+        <div id="comentarios"></div>
+        <div class="comment mb-3 d-flex">
+          <div class="avatar me-3">
+            <img src="/assets/img/avatar.jpg" alt="avatar" class="rounded-circle" width="50">
+          </div>
+          <div class="comment-body">
+            <strong>Carlos</strong>
+            <p>¡Excelente artículo! Me sirvió mucho.</p>
+            <a href="#" class="reply-link">Responder</a>
+            <!-- Respuesta -->
+            <div class="reply-form mt-2 d-none">
+              <input type="text" class="form-control mb-2" placeholder="Escribí tu respuesta...">
+              <button class="btn btn-sm btn-primary">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form id="formComentario" class="mb-4 mt-4">
+        <h5 class="mb-3">Dejá tu comentario</h5>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email <small class="text-muted">(no se publicará)</small></label>
+          <input type="email" class="form-control" id="email" placeholder="Tu email" required>
+        </div>
+        <div class="mb-3">
+          <label for="comentario" class="form-label">Comentario</label>
+          <textarea class="form-control" id="comentario" rows="3" placeholder="Escribí tu comentario..."
+            required></textarea>
+        </div>
+        <button type="submit" class="btn btn-danger">Enviar comentario</button>
+      </form>
+
+
     </section>
 
   </main>

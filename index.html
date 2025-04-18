@@ -21,10 +21,20 @@
   <!-- Navbar Bootstrap -->
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">
-        Be <span class="text-danger">|</span> Strong
-      </a>
+      <div class="container-logo">
+        <a href="#" class="logo-minimal d-none d-lg-inline-flex">
+          <span>Be</span>
+          <span class="logo-pipe">|</span>
+          <span>Strong</span>
+        </a>
 
+        <!-- Logo simple para mobile -->
+        <a href="#" class="logo-simple d-inline-flex d-lg-none">
+          <span>Be</span>
+          <span class="logo-pipe">|</span>
+          <span>Strong</span>
+        </a>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -76,7 +86,7 @@
     <section class="section-container">
       <h2 class="section-title">Nuestras Clases Destacadas</h2>
 
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
         <!-- Card 1: CrossFit -->
         <div class="col">
           <div class="card">

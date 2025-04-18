@@ -13,6 +13,9 @@
   <!-- bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
@@ -50,12 +53,22 @@
     </div>
   </nav>
 
+  <!-- hero -->
+
+  <section
+    class="hero-section hero-entrenadores d-flex align-items-center justify-content-center text-white text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Título de la Página</h1>
+      <p class="lead">Subtítulo o frase destacada</p>
+    </div>
+  </section>
+
   <!-- seccion central -->
   <main class="container">
     <!-- Sección de Entrenadores -->
-    <section class="trainers-section">
-      <h2 class="section-title">Conoce al equipo</h2>
-      <p class="section-subtitle">
+    <section class="trainers-section text-center">
+      <h2 class="section-title mt-3">Conoce al equipo</h2>
+      <p class="secondary-text">
         Pasa el cursor sobre cada tarjeta para ver más detalles
       </p>
 
@@ -67,18 +80,11 @@
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front p-4 text-center bg-light">
-                    <img src="../assets/img/trainer1.webp" alt="Entrenador" class="img-fluid rounded-circle mb-2"
-                      width="100" />
+                    <img src="../assets/img/trainer1.webp" alt="Entrenador" class="flip-card--img" width="100" />
                     <h5>Carlos Mendez</h5>
                     <p>Especialista en CrossFit</p>
-                    <!---->
-                    <div class="rating">
-                      <input type="radio" name="star" id="star5" value="5" /><label for="star5">★</label>
-                      <input type="radio" name="star" id="star4" value="4" /><label for="star4">★</label>
-                      <input type="radio" name="star" id="star3" value="3" /><label for="star3">★</label>
-                      <input type="radio" name="star" id="star2" value="2" /><label for="star2">★</label>
-                      <input type="radio" name="star" id="star1" value="1" /><label for="star1">★</label>
-                    </div>
+
+                    <div class="rating-static" data-rating="5"></div>
                   </div>
                   <div class="flip-card-back p-4 text-white text-center">
                     <h5>Carlos Mendez</h5>
@@ -86,21 +92,21 @@
                     <div class="text-start">
                       <small>Fuerza</small>
                       <div class="progress mb-2">
-                        <div class="progress-bar bg-warning" data-width="90%" style="width: 0%">
+                        <div class="progress-bar bg-brand" data-width="90%" style="width: 0%">
                           0%
                         </div>
                       </div>
 
                       <small>Resistencia</small>
                       <div class="progress mb-2">
-                        <div class="progress-bar bg-success" data-width="85%" style="width: 0%">
+                        <div class="progress-bar bg-brand" data-width="85%" style="width: 0%">
                           0%
                         </div>
                       </div>
 
                       <small>Técnica</small>
                       <div class="progress">
-                        <div class="progress-bar bg-info" data-width="95%" style="width: 0%">
+                        <div class="progress-bar bg-brand" data-width="95%" style="width: 0%">
                           0%
                         </div>
                       </div>
@@ -119,18 +125,10 @@
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front p-4 text-center bg-light">
-                    <img src="../assets/img/trainer2.jpg" alt="Entrenador" class="img-fluid rounded-circle mb-2"
-                      width="100" />
+                    <img src="../assets/img/trainer2.jpg" alt="Entrenador" class="flip-card--img" />
                     <h5>Ana López</h5>
                     <p>Especialista en Yoga</p>
-                    <!---->
-                    <div class="rating">
-                      <input type="radio" name="star" id="star5" value="5" /><label for="star5">★</label>
-                      <input type="radio" name="star" id="star4" value="4" /><label for="star4">★</label>
-                      <input type="radio" name="star" id="star3" value="3" /><label for="star3">★</label>
-                      <input type="radio" name="star" id="star2" value="2" /><label for="star2">★</label>
-                      <input type="radio" name="star" id="star1" value="1" /><label for="star1">★</label>
-                    </div>
+                    <div class="rating-static" data-rating="4.75"></div>
                   </div>
                   <div class="flip-card-back p-4 text-white text-center">
                     <h5>Ana López</h5>
@@ -138,21 +136,21 @@
                     <div class="text-start">
                       <small>Flexibilidad</small>
                       <div class="progress mb-2">
-                        <div class="progress-bar bg-warning" data-width="90%" style="width: 0%">
+                        <div class="progress-bar bg-brand" data-width="90%" style="width: 0%">
                           0%
                         </div>
                       </div>
 
                       <small>Meditación</small>
                       <div class="progress mb-2">
-                        <div class="progress-bar bg-success" data-width="85%" style="width: 0%">
+                        <div class="progress-bar bg-brand" data-width="85%" style="width: 0%">
                           0%
                         </div>
                       </div>
 
                       <small>Relajación</small>
                       <div class="progress">
-                        <div class="progress-bar bg-info" data-width="95%" style="width: 0%">
+                        <div class="progress-bar bg-brand" data-width="95%" style="width: 0%">
                           0%
                         </div>
                       </div>
@@ -171,18 +169,11 @@
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front p-4 text-center bg-light">
-                    <img src="../assets/img/trainer3.webp" alt="Entrenador" class="img-fluid rounded-circle mb-2"
-                      width="100" />
+                    <img src="../assets/img/trainer3.webp" alt="Entrenador" class="flip-card--img" width="100" />
                     <h5>Javier Rodríguez</h5>
                     <p>Especialista en Musculación</p>
                     <!---->
-                    <div class="rating">
-                      <input type="radio" name="star" id="star5" value="5" /><label for="star5">★</label>
-                      <input type="radio" name="star" id="star4" value="4" /><label for="star4">★</label>
-                      <input type="radio" name="star" id="star3" value="3" /><label for="star3">★</label>
-                      <input type="radio" name="star" id="star2" value="2" /><label for="star2">★</label>
-                      <input type="radio" name="star" id="star1" value="1" /><label for="star1">★</label>
-                    </div>
+                    <div class="rating-static" data-rating="4"></div>
                   </div>
                   <div class="flip-card-back p-4 text-white text-center">
                     <h5>Javier Rodríguez</h5>
@@ -190,21 +181,21 @@
                     <div class="text-start">
                       <small>Fuerza</small>
                       <div class="progress mb-2">
-                        <div class="progress-bar bg-warning" data-width="90%" style="width: 0%">
+                        <div class="progress-bar bg-brand" data-width="90%" style="width: 0%">
                           0%
                         </div>
                       </div>
 
                       <small>Hipertrófia</small>
                       <div class="progress mb-2">
-                        <div class="progress-bar bg-success" data-width="85%" style="width: 0%">
+                        <div class="progress-bar bg-brand" data-width="85%" style="width: 0%">
                           0%
                         </div>
                       </div>
 
                       <small>Nutrición</small>
                       <div class="progress">
-                        <div class="progress-bar bg-info" data-width="95%" style="width: 0%">
+                        <div class="progress-bar bg-brand" data-width="95%" style="width: 0%">
                           0%
                         </div>
                       </div>

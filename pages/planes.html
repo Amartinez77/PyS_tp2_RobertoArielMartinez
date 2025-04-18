@@ -50,22 +50,29 @@
     </div>
   </nav>
 
-  <!-- main -->
+  <!-- hero -->
 
+  <section class="hero-section hero-planes d-flex align-items-center justify-content-center text-white text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Nuestros Planes</h1>
+      <p class="lead">Elige el que mejor se adapte a tus objetivos</p>
+    </div>
+  </section>
+
+  <!-- main -->
   <main class="container">
 
     <section class="container py-5" id="planes">
-      <h1 class="text-center mb-4 text-primary fw-bold">Planes de Membresía</h1>
+      <h1 class="text-center mb-4 title_h1">Planes de Membresía</h1>
 
-      <!-- Toggle mensual/anual -->
-      <div class="d-flex justify-content-center mb-4">
-        <div class="form-check form-switch">
+      <div class="d-flex justify-content-center align-items-center gap-3 mb-4">
+        <span id="mensualLabel" class="billing-label fw-bold">Mensual</span>
+        <div class="form-check form-switch m-0">
           <input class="form-check-input" type="checkbox" id="billingSwitch">
-          <label class="form-check-label" for="billingSwitch">
-            <span class="me-2">Mensual</span><span class="ms-2">Anual</span>
-          </label>
         </div>
+        <span id="anualLabel" class="billing-label fw-bold text-secondary">Anual</span>
       </div>
+
 
       <!-- Planes -->
       <div class="row g-4">
